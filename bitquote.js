@@ -18,12 +18,12 @@ function initialize(options) {
       $(container + " .bitquote-price").html(options.fiatSymbol + data.last);
       if (options.showBidAsk) {
         if (options.fiatSymbol.length <= 2) {
-          $(container + " .bitquote-bid").html("Bid: " + options.fiatSymbol + data.bid);
-          $(container + " .bitquote-ask").html("Ask: " + options.fiatSymbol + data.ask);
+          $(container + " .bitquote-bid").html("Mua: " + options.fiatSymbol + data.bid);
+          $(container + " .bitquote-ask").html("Bán: " + options.fiatSymbol + data.ask);
         }
         else {
-          $(container + " .bitquote-bid").html("Bid: " + data.bid);
-          $(container + " .bitquote-ask").html("Ask: " + data.ask);
+          $(container + " .bitquote-bid").html("Mua: " + data.bid);
+          $(container + " .bitquote-ask").html("Bán: " + data.ask);
         }
       }
       if (options.autoResize)
