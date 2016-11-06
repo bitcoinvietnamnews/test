@@ -3,7 +3,7 @@ var bitQuotes = [];
 function initialize(options) {
   var options = $.extend({
     "fiat": "USD",
-    "fiatSymbol": "VNĐ",
+    "fiatSymbol": "$",
     "container": "bitquote",
     "showBidAsk": true,
     "href": "https://bitcoinaverage.com/",
