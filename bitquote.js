@@ -18,8 +18,8 @@ function initialize(options) {
       $(container + " .bitquote-price").html(options.fiatSymbol + data.last);
       if (options.showBidAsk) {
         if (options.fiatSymbol.length <= 2) {
-          $(container + " .bitquote-bid").html("Mua: " + data.bid + options.fiatSymbol );
-          $(container + " .bitquote-ask").html("Bán: " + data.ask + options.fiatSymbol );
+          $(container + " .bitquote-bid").html("Mua: " + options.fiatSymbol + data.bid );
+          $(container + " .bitquote-ask").html("Bán: " + options.fiatSymbol + data.ask );
         }
         else {
           $(container + " .bitquote-bid").html("Mua: " + data.bid);
