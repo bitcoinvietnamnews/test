@@ -2,7 +2,7 @@ var bitQuotes = [];
 
 function initialize(options) {
   var options = $.extend({
-    "fiat": "VND",
+    "fiat": "USD",
     "fiatSymbol": "VNĐ",
     "container": "bitquote",
     "showBidAsk": true,
